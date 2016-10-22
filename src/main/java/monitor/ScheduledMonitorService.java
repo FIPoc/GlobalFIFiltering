@@ -22,7 +22,7 @@ public class ScheduledMonitorService {
 
         List<StagingDTO> stagingDTOList = FilterService.filer(legacyFiles, vsFiles);
 
-        DBService.perist(stagingDTOList);
+        new StagingDao().perist(stagingDTOList);
 
     }
 
